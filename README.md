@@ -14,7 +14,9 @@ cd models
 pip install -e .
 ```
 
-### Run PEFT on GLUE
+### Experiments
+
+Evaluating the S4-model (`PEFT` is the alias) with the RoBERTa backbone on GLUE
 
 ```
 export TASK_NAME=sst-2
@@ -26,7 +28,7 @@ python run_glue.py \
   --do_eval \
   --max_seq_length 128 \
   --per_device_train_batch_size 32 \
-  --learning_rate 1e-4 \
+  --learning_rate 5e-5 \
   --num_train_epochs 10.0 \
   --output_dir /tmp/$TASK_NAME \
   --overwrite_output_dir \
