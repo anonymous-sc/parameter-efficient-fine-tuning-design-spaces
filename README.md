@@ -22,7 +22,7 @@ Evaluating the S4-model (`PEFT` is the alias) with the RoBERTa backbone on GLUE
 export TASK_NAME=sst-2
 
 python run_glue.py \
-  --model_name_or_path robert-base-uncased \
+  --model_name_or_path roberta-base-uncased \
   --task_name $TASK_NAME \
   --do_train \
   --do_eval \
