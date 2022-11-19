@@ -39,6 +39,7 @@ python run_glue.py \
 ## TODO
 
 * Polish code and documentation
+* Add more experiments
 
 
 ## License
