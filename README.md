@@ -27,7 +27,7 @@ python run_glue.py \
   --do_train \
   --do_eval \
   --max_seq_length 128 \
-  --per_device_train_batch_size 32 \
+  --per_device_train_batch_size 16 \
   --learning_rate 5e-5 \
   --num_train_epochs 10.0 \
   --output_dir /tmp/$TASK_NAME \
